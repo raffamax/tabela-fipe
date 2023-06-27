@@ -19,7 +19,7 @@ export default function BoxContainer(props: BoxProps) {
         borderRadius: 2,
         fontSize: "0.875rem",
         fontWeight: "700",
-        minWidth: 350,
+        width: 460,
         minHeight: 200,
         display: "flex",
         flexDirection: "column",

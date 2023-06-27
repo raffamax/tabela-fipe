@@ -13,7 +13,7 @@ export default function YearSelect() {
         <Autocomplete
           id="years"
           options={years}
-          sx={{ width: 300 }}
+          sx={{ width: 400 , m:1}}
           renderInput={(params) => <TextField {...params} label="Ano" />}
           value={selectedYear}
           onChange={(event: any, newYear: any) => {

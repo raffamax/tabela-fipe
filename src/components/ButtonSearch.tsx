@@ -38,6 +38,7 @@ export default function ButtonSearch() {
         style={{ textTransform: "none" }}
         sx={{
           m: 1,
+          width: 180,
           bgcolor: "#5D01BE",
           "&:hover": {
             backgroundColor: "#45018C",

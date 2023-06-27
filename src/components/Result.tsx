@@ -16,7 +16,7 @@ export default function Result() {
   return (
     <>
       <Typography
-        variant="h6"
+        variant="h5"
         component={"h2"}
         fontWeight={700}
         color={"grey.700"}
@@ -27,12 +27,12 @@ export default function Result() {
       </Typography>
       <Chip
         label={
-          <Typography variant="h6" component={"h2"} fontWeight={700}>
+          <Typography variant="h5" component={"h2"} fontWeight={700} >
             {price}
           </Typography>
         }
         color="success"
-        sx={{ backgroundColor: "#00A48C", m: 1 }}
+        sx={{ backgroundColor: "#00A48C", m: 1 , p: 3 , borderRadius: 50}}
       />
       <Typography
         variant="body2"

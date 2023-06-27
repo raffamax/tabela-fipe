@@ -11,7 +11,7 @@ export default function ModelSelect() {
     <Autocomplete
       id="models"
       options={models}
-      sx={{ width: 300, m: 1 }}
+      sx={{ width: 400, m: 1 }}
       renderInput={(params) => <TextField {...params} label="Modelo" />}
       disabled={!selectedMake}
       value={selectedModel}

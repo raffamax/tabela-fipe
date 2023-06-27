@@ -31,16 +31,16 @@ export default function Home() {
         <Typography
           variant="h4"
           component={"h2"}
-          fontWeight={500}
-          color={"grey.700"}
+          fontWeight={600}
+          sx={{color: "#424242"}}
         >
           Tabela Fipe
         </Typography>
         <Typography
-          variant="h6"
+          variant="h5"
           component={"h2"}
           fontWeight={700}
-          color={"grey.700"}
+          sx={{color: "#424242"}}
         >
           Consulte o valor de um veículo de forma gratuita
         </Typography>
