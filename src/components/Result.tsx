@@ -20,7 +20,9 @@ export default function Result() {
         component={"h2"}
         fontWeight={700}
         color={"grey.700"}
-        sx={{ m: 1 }}
+        sx={{ m: 1 , textAlign: "center" , "@media (max-width: 700px)": {
+          fontSize: 17
+        },}}
       >
         Tabela Fipe: Preço {selectedMake?.label} {selectedModel?.label} ano{" "}
         {selectedYear?.label}
@@ -39,7 +41,7 @@ export default function Result() {
         component={"h2"}
         fontWeight={400}
         color={"grey.700"}
-        sx={{ m: 1 }}
+        sx={{ m: 1 ,textAlign: "center" }}
       >
         Este é o preço de compra do veículo
       </Typography>

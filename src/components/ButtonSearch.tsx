@@ -43,6 +43,9 @@ export default function ButtonSearch() {
           "&:hover": {
             backgroundColor: "#45018C",
           },
+          "@media (max-width: 700px)": {
+            width: 150,
+          },
         }}
         disabled={!selectedYear}
         onClick={handleSearch}

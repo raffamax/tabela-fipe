@@ -3,12 +3,10 @@ import MakeSelect from "../components/MakeSelect";
 import ModelSelect from "../components/ModelSelect";
 import YearSelect from "../components/YearSelect";
 import ButtonSearch from "@/components/ButtonSearch";
-import { Box, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import BoxContainer from "@/components/BoxContainer";
 
 export default function Home() {
-
-
   return (
     <>
       <Head>
@@ -17,6 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="car-wash.png" />
       </Head>
+
       <Box
         sx={{
           m: 5,
@@ -25,14 +24,22 @@ export default function Home() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
+          textAlign: "center",
           backgroundColor: "#F9F6FC",
+          "@media (max-width: 700px)": {
+            mx: 1,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          },
         }}
       >
         <Typography
           variant="h4"
           component={"h2"}
           fontWeight={600}
-          sx={{color: "#424242"}}
+          sx={{ color: "#424242" , "@media (max-width: 700px)":{ fontSize: 25} }}
         >
           Tabela Fipe
         </Typography>
@@ -40,7 +47,7 @@ export default function Home() {
           variant="h5"
           component={"h2"}
           fontWeight={700}
-          sx={{color: "#424242"}}
+          sx={{ color: "#424242", "@media (max-width: 700px)":{ fontSize: 17} }}
         >
           Consulte o valor de um veículo de forma gratuita
         </Typography>

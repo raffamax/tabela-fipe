@@ -10,7 +10,13 @@ export default function MakeSelect() {
     <Autocomplete
       id="makes"
       options={makes}
-      sx={{ width: 400, m: 1 }}
+      sx={{
+        width: 400,
+        m: 1,
+        "@media (max-width: 700px)": {
+          width: 250,
+        },
+      }}
       renderInput={(params) => <TextField {...params} label="Marca" />}
       value={selectedMake}
       onChange={(event: any, newMake: any) => {

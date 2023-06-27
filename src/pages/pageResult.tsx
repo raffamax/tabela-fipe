@@ -21,6 +21,13 @@ const PageResult = () => {
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#DCF5F2",
+        "@media (max-width: 700px)": {
+          mx: 1,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        },
       }}
     >
       <Result />

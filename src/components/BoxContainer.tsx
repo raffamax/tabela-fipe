@@ -26,6 +26,9 @@ export default function BoxContainer(props: BoxProps) {
         justifyContent: "center",
         alignItems: "center",
         ...sx,
+        "@media (max-width: 700px)": {
+          width: 300,
+        },
       }}
       {...other}
     />
